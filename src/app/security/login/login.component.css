@@ -1,0 +1,16 @@
+input[type=email],
+input[type=password],
+button {
+  width: 422px;
+  height: 48px;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.col-right, .col-left {
+  width: 50%;
+}
+
+.col-right {
+  background-color: #212529;
+}
