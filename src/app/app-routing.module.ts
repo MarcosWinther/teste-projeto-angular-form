@@ -5,11 +5,9 @@ import { LoginComponent } from './security/login/login.component';
 import { ValidateAccessComponent } from './security/validate-access/validate-access.component';
 
 const routes: Routes = [
-  {path:'login', component:LoginComponent},
-  {
-    path:'', component:ValidateAccessComponent
-  },
-  {path:'client', component:ClientsListComponent}
+  { path:'', component:LoginComponent },
+  { path:'valid-access', component:ValidateAccessComponent} ,
+  { path: 'clients', component:ClientsListComponent }
 ];
 
 @NgModule({

@@ -1,8 +1,35 @@
-h1, h2, h3, h4, p, hr {
+h1, h2, h3, h5, p {
   color: #FFF;
 }
 
-th, td,
-.text-primary > p, .text-danger > p {
-  font-size: 16px;
+hr {
+  border: 0.5px solid #9EC5FE
+}
+
+tr:hover {
+  background: rgba(207, 226, 255, 0.3);
+}
+
+.title a {
+  color: #F8F9FA;
+}
+
+.info-dasboard button {
+  width: 273px;
+  height: 44px;
+  border-radius: 4px;
+}
+
+.card, .card-header {
+  background-color: #FFF;
+  top: -30px;
+}
+
+table td button {
+  color: #79DFC1 30%;
+  border: none;
+  height: 23px;
+  width: 70px;
+  border-radius: 4px;
+  padding: 2px 4px 2px 4px;
 }

@@ -9,42 +9,32 @@ import { ToastrService } from 'ngx-toastr';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent {
-  /*
-  public formLogin: FormGroup;
 
-  constructor(private fb:FormBuilder,private loginService:LoginService, private route:Router, private toast:ToastrService) {
-    this.formLogin = this.criarFormLogin();
+export class LoginComponent implements OnInit {
+
+  public loginForm:FormGroup;
+
+  constructor(private fb: FormBuilder, private router:Router) {
+    this.loginForm = this.criarFormLogin();
   }
 
   ngOnInit(): void {
-
   }
 
   public criarFormLogin():FormGroup {
     return this.fb.group({
-      username:["", [Validators.required, Validators.minLength(6)]],
-      password:["", [Validators.required, Validators.minLength(6)]],
+      username: ['', [Validators.required, Validators.minLength(10)]],
+      password: ['', [Validators.required, Validators.minLength(6)]]
     })
   }
 
-  public isFormControlInvalid(controlName:string):boolean {
-    return !!(this.formLogin.get(controlName)?.invalid && this.formLogin.get(controlName)?.touched);
+  submitForm() {
+    if(this.loginForm.valid) {
+      this.router.navigate(['valid-access']);
+    }
   }
 
-  public submitForm() {
-    const {username, password} = this.formLogin.value;
-    this.formLogin.reset();
+  private validarFormFields(formGroup:FormGroup) {
 
-    this.loginService.login(username, password).subscribe(
-      resp => {
-        this.toast.success('Login efetuado com sucesso');
-        this.route.navigate(['']);
-      },
-      err => {
-        this.toast.error(err);
-      }
-    )
   }
-   */
 }

@@ -1,5 +1,9 @@
-.row > input[type=text] {
+.tokens {
+  max-width: 422px;
   box-sizing: border-box;
+}
+
+.col > input[type=text] {
   width: 48px;
   height: 56px;
   border: 1px solid #BEBEBE;
@@ -20,6 +24,10 @@ a {
 
 p > a {
   font-weight: bold;
+  color: #0A58CA;
+  ;
 }
 
-
+.header h4 {
+  color: #9ec5fe;
+}

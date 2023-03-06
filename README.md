@@ -3,18 +3,13 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
 
 # Informações antes de testar
-Tive dificuldade no formGroup na parte de login e 
-de redirecionar as rotas, sugiro os testes pelos links:
 
-http://localhost:4200/login
+Na tela tela, a parte de digitar os códigos, mesmo eu 
+tentando forçar no CSS não consegui ter o espaçamento.
 
-http://localhost:4200/
-
-http://localhost:4200/client
-
-Na tela tela, a parte de digitar os códigos, mesmo eu tentando forçar no CSS não consegui ter o espaçamento.
-
-A tela de cadastro também obtive dificuldades, até estou enviando a cópia, que a tabela estava em formato de teste, que a original estava cheios de erros e não puxava os dados do arquivo json.
+A tela de cadastro também obtive dificuldades, até
+estou enviando a cópia, que a tabela estava em formato
+de teste, não consegui puxar os dados do arquivo Json para a tabela.
 
 ## Development server
 

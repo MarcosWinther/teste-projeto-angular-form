@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter' !important;
 }
 
 body {
@@ -14,7 +14,6 @@ body {
 
 h1 {
   font-size: 40px;
-  color: #9ec5fe;
 }
 
 h2 {
@@ -30,3 +29,33 @@ h4 {
   font-size: 24px;
 }
 
+h5 {
+  font-size: 20px;
+}
+
+h6, p, th, td, button {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+  border-color: #BEBEBE !important;
+}
+
+.container {
+  background: #F8F9FA;
+}
+
+::placeholder {
+  font-size: 16px;
+  line-height: 21px;
+}
